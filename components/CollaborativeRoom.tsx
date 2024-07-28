@@ -28,7 +28,6 @@ const CollaborativeRoom = ({
   const inputRef = useRef<HTMLDivElement>(null);
 
   // Update the document title when the user presses enter
-  // TODO: Updated title does not reflect in the other user's screen even after refreshing the page.
   const updateTitleHandler = async (
     e: React.KeyboardEvent<HTMLInputElement>
   ) => {
