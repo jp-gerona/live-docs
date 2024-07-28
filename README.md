@@ -28,7 +28,7 @@ Live Docs is a fully-responsive web application that manages mark-down text edit
 
 ## Running the Application
 
-The application is deployed using Vercel. You can check the website out at https://jp-gerona-apple-website-clone.vercel.app/, or if you want to set-up this project in your local machine, follow these steps.
+The application is deployed using Vercel. You can check the web app out at https://live-docs-taupe-beta.vercel.app, or if you want to set-up this project in your local machine, follow these steps.
 
 - Clone the repository
 
