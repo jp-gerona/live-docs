@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+> [!NOTE]  
+> This project is for educational purposes only, aimed to understand and grasp the concepts of creating complex web applications using NextJS and Liveblocks. All assets used belong to their respective owners.
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+![Next JS](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Clerk](https://img.shields.io/badge/clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white)
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![ShadCN UI](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+</div>
+
+## Summary
+
+Live Docs is a fully-responsive web application that manages mark-down text editing collaboration in real-time. It is complete with CRUD functionalities, floating and sticky comment threads, live cursors, notifications, invitations, and many more.
+
+## Features
+
+- **Next.js**: A React framework that enables server-side rendering, server-actions, and revalidation.
+
+- **Typescript**: A statically typed superset of JavaScript that enhances code quality and developer productivity with type safety and better tooling.
+
+- **Clerk**: A user management and authentication service that simplifies the process of adding sign-up, sign-in, and user profile management to the application.
+
+- **Liveblocks**: A real-time collaboration infrastructure that allows multiple users to edit documents simultaneously, with features like live cursors, presence, and conflict resolution.
+
+
+## Running the Application
+
+The application is deployed using Vercel. You can check the website out at https://jp-gerona-apple-website-clone.vercel.app/, or if you want to set-up this project in your local machine, follow these steps.
+
+- Clone the repository
+
+- In your terminal, install the necessary dependencies by running `npm install`
+
+- Create a new file named .env.local in the root of your project and add the following content:
+
+```env
+#Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+#Liveblocks
+NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY=
+LIVEBLOCKS_SECRET_KEY=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Insert values with your actual Clerk & LiveBlocks API Keys.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Run the application in development mode using `npm run dev`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Run the application in build mode using `npm run build`
 
-## Learn More
+- Vite will provide a URL in the terminal to your local server: http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+## Additional Reflection
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project took me 1 week to finish and understand the concepts. Next.js definitely makes it easy to build routing, API integration, and anything server-side related. When you compare it to using plain React only, it would have taken more effort to set-up these things.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Typescript introduces more strict rules over the usual Javascript but it does come with advantages like typesafety in build complex and growing web applications. It is self-documenting that makes it easier to understand what data types do each variables that are passed in the codebase.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Special thanks to [Javascript Mastery](https://www.youtube.com/@javascriptmastery) for this well-explained and awesome tutorial :)
